@@ -37,5 +37,5 @@ rm -rf package/feeds/packages/hysteria
 rm -rf feeds/packages/net/v2ray-geodata
 git clone https://github.com/xiaorouji/openwrt-passwall package/passwall
 git clone https://github.com/xiaorouji/openwrt-passwall-packages package/passwall-packages
-sed -i 's|^PKG_SOURCE_URL:=https://github.com/SoftEtherVPN/SoftEtherVPN_Stable/releases/download/v$(PKG_REALVERSION)-$(PKG_VERREL)|PKG_SOURCE_URL:=https://github.com/Jio0oiJ/softethervpn/releases/download/v$(PKG_REALVERSION)-$(PKG_VERREL)|' ./package/feeds/packages/softethervpn/Makefile
+sed -i 's|^PKG_SOURCE_URL:=https://github.com/SoftEtherVPN/SoftEtherVPN_Stable/releases/download/|PKG_SOURCE_URL:=https://github.com/Jio0oiJ/softethervpn/releases/download/|' ./package/feeds/packages/softethervpn/Makefile
 sed -i 's|^PKG_HASH:=e68128b46171bd9f3f9ca38d10e60e8590a833bfc6488fa014674f9a22541f35|PKG_HASH:=3b3e047f81726b6fe6a3db1e847b6bb22ef8b1b34e4ed34b9c4769b3969f3457|' ./package/feeds/packages/softethervpn/Makefile
